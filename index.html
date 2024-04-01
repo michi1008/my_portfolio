@@ -7,10 +7,7 @@
    
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    
 </head>
 <body>
     <!-- header -->
@@ -43,8 +40,11 @@
                     <img src="assets/my_pic.jpg" alt="my picture">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <div class="underline-about"></div>
+                    <div class="title-container">
+                        <h1 class="sub-title">About me</h1>
+                        <div class="underline-about"></div>
+                    </div>
+                   
                     <p>I am a dedicated Localization Project Manager with a passion for continuous learning. Through completing over 30 online courses in programming languages and web/app development, I've equipped myself with versatile skills to excel in my role. My ethos is centered on making meaningful contributions to any organization I join. Committed to going the extra mile, I strive to enhance processes and drive positive change within the company. </p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
@@ -54,7 +54,7 @@
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
                                 <div class="skill-title-container">
-                                <img class="skill-image" src="/assets/globe.png" />
+                                <i class="fa-solid fa-globe"></i>
                                 <h4 class="tab-contents-sub-title">Localization Project Manager Related</h4>
                                 </div>
                                 <li>WorldServer</li>
@@ -114,8 +114,11 @@
 
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <div class="title-container">
+                <h1 class="sub-title">My Work</h1>
             <div class="underline-portfolio"></div>
+            </div>
+            
             <div class="work-list">
                 <div class="work">
                     <img src="assets/recipe_share.png" alt="app-image">
@@ -199,8 +202,10 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <div class="underline-contact"></div>
+                <div class="title-container">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="underline-contact"></div>
+                </div>
                 <div class="contact-item">
                     <img class="contact-image" src="assets/mail.png" alt="external-link"/><p>michytaguchi@gmail.com</p>
                 </div>
@@ -208,9 +213,9 @@
                     <img class="contact-image" src="assets/phone.png" alt="external-link"/><p>831-521-2351</p>
                 </div>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/michikotaguchi/"><img src="assets/linkedin.png" alt="linkedin-icon"></a>
-                    <a href="https://github.com/michi1008"><img src="assets/github.png" alt="facebook-icon"></a>
-                    <a href="https://twitter.com/michidev1008"><img src="assets/twitter.png" alt="twitter-icon"></a>
+                    <a href="https://www.linkedin.com/in/michikotaguchi/"><img class="icon" src="assets/linkedin.png" alt="linkedin-icon"></a>
+                    <a href="https://github.com/michi1008"><img class="icon" src="assets/github.png" alt="facebook-icon"></a>
+                    <a href="https://twitter.com/michidev1008"><img class="icon" src="assets/twitter.png" alt="twitter-icon"></a>
                 </div>
                 <a href="assets/Resume_MichikoTaguchi.pdf" download class="btn">Download Resume</a>
             </div>
