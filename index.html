@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href='assets/logo.png' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo.png" class="logo" alt="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">My Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img class="fas close" src="assets/close.png" alt="" onclick="closemenu()">
+                </ul>
+                <img class="fas menu" src="assets/menu.png" alt="" onclick="openmenu()">
+               
+            </nav>
+            <div class="header-text">
+                <h3>Localization Project Manager & Web Developer</h3>
+                <h1>Hi, I'm <span>Michiko</span>!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/my_pic.jpg" alt="my picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <div class="underline-about"></div>
+                    <p>I am a dedicated Localization Project Manager with a passion for continuous learning. Through completing over 30 online courses in programming languages and web/app development, I've equipped myself with versatile skills to excel in my role. My ethos is centered on making meaningful contributions to any organization I join. Committed to going the extra mile, I strive to enhance processes and drive positive change within the company. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <div class="skill-title-container">
+                                <img class="skill-image" src="/assets/globe.png" />
+                                <h4 class="tab-contents-sub-title">Localization Project Manager Related</h4>
+                                </div>
+                                <li>WorldServer</li>
+                                <li>Lokalise</li>
+                                <li>Figma</li>
+                                <li>XTM International</li>
+                                <li>Passolo</li>
+                            </ul>
+                            <ul>
+                                <div class="skill-title-container">
+                                    <img class="skill-image" src="/assets/coding.png" />
+                                    <h4 class="tab-contents-sub-title">Web & GUI Development Related</h4>
+                                </div>
+                                <div class="web-skill">
+                                    <div class="skill-part-1">
+                                        <li>Python</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Java</li>
+                                        <li>MongoDB</li>
+                                        <li>GitHub</li>
+                                    </div>
+                                    <div class="skill-part-2">
+                                        <li>TKinter</li>
+                                        <li>React</li>
+                                        <li>RTK Query</li>
+                                        <li>PostgreSQL</li>
+                                        <li>MySQL</li>
+                                        <li>JIRA</li>
+                                        <li>Confluence</li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Oct 2021-current</span><br>Localization Project Manager at Apple via TELUS INTERNTAIONAL</li>
+                                <li><span>March2021-Oct2021</span><br>Localization Project Manager at Impossible New World</li>
+                                <li><span>Nov2015-Sep2020</span><br>Kyocera Document Solutions Develpment America</li>
+                                <li><span>June2015-Nov2015</span><br>Interpretor and Translator at Honda North America</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>MA Translation</span><br>Middlebury Institute of International Studies at Monterey, Monterey, CA </li>
+                                <li><span>MBA</span><br>Sasin Graduate Institute of Business Administration, Bangkok, Thailand</li>
+                                <li><span>BS Economics & Political Science</span><br>Meiji University, Tokyo, Japan</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="underline-portfolio"></div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/recipe_share.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Share Recipe Site</h3>
+                        <p>MERN project. Share your own recipes with family and friends. Users sign in and share their recipes.</p>
+                        <a href="https://recipeshareapp.herokuapp.com/"><img class="icon-image" src="assets/link.png" alt="external-link"/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/chris_art_shop.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Chris Lange Art Gallery</h3>
+                        <p>MERN project. Using PayPal for payment. Art e-commerce website. Admins can add new products and log payments and deliveries.</p>
+                        <a href="https://chris-art-shop.onrender.com/"><img class="icon-image" src="assets/link.png" alt="external-link"/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/estimator.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Cost Estimator</h3>
+                        <p>Retrieve data from a JSON file using JavaScript and deploy it from the AppleCare GitHub repository. Estimate the cost and time required for the localization project based on the word count for each locale.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/meditation.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Meditation</h3>
+                        <p>Simple JavaScript project. Video and sound effects for your meditation. Users can also choose the duration.</p>
+                        <a href="https://meditationworld.netlify.app/"><img class="icon-image" src="assets/link.png" alt="external-link"/></a>
+                    </div>
+                </div>
+               
+                <div class="work">
+                    <img src="assets/take_a_diff.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Take a diff App</h3>
+                        <p>Desktop app created with Python Tkinter. Compare the two files and highlight the Diffs</p>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="assets/digital_art.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Digital Art Shop</h3>
+                        <p>MERN project. Ecommerce website to sell digital art. Admins can add new products and log payments and deliveries.</p>
+                        <a href="https://kenlangeartshop.onrender.com/"><img class="icon-image" src="assets/link.png" alt="external-link"/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/quote_teller.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Quote Teller</h3>
+                        <p>Simple JavaScript HTML CSS Website. A robot randomly tells you a quote aloud. Quotes are pulled using an API.</p>
+                        <a href="https://michi1008.github.io/quote-teller/"><img class="icon-image" src="assets/link.png" alt="external-link"/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/music_by_ken.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Music By Ken</h3>
+                        <p>Simple JavaScript HTML CSS Website. A small music playlist. The songs were created by Ken.</p>
+                        <a href="https://michi1008.github.io/sound-world-by-Ken/"><img class="icon-image" src="assets/link.png" alt="external-link"/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/billing_check.png" alt="app-image">
+                    <div class="layer">
+                        <h3>Billing Check App</h3>
+                        <p>Desktop app created with Python Tkinter. Compare costs in the project tracker to see if they match the ones from vendors</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="underline-contact"></div>
+                <div class="contact-item">
+                    <img class="contact-image" src="assets/mail.png" alt="external-link"/><p>michytaguchi@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <img class="contact-image" src="assets/phone.png" alt="external-link"/><p>831-521-2351</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/michikotaguchi/"><img src="assets/linkedin.png" alt="linkedin-icon"></a>
+                    <a href="https://github.com/michi1008"><img src="assets/github.png" alt="facebook-icon"></a>
+                    <a href="https://twitter.com/michidev1008"><img src="assets/twitter.png" alt="twitter-icon"></a>
+                </div>
+                <a href="assets/Resume_MichikoTaguchi.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Michiko Taguchi ❤️  &copy; <script>document.write(new Date().getFullYear())</script></p>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
