@@ -200,8 +200,8 @@ nav ul li a:hover::after {
 .underline-about {
   background-color: var(--clr-primary-4);
   height: 5px;
-  width: 25%;
   margin-bottom: 2rem;
+  width: 20%;
 }
 
 .tab-titles {
@@ -294,7 +294,7 @@ nav ul li a:hover::after {
 .underline-portfolio {
   background-color: var(--clr-primary-1);
   height: 5px;
-  width: 15%;
+  width: 10%;
 }
 
 .work-list {
@@ -383,7 +383,7 @@ nav ul li a:hover::after {
 
 .underline-contact {
   background-color: var(--clr-primary-1);
-  width: 50%;
+  width: 25%;
   height: 5px;
   margin-bottom: 2rem;
 }
