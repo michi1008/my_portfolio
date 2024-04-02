@@ -513,6 +513,7 @@ nav .fas {
   }
   .header-text h3 {
     font-size: 1.5rem;
+    color:var(--clr-primary-2);
   }
 
   nav .fas {
